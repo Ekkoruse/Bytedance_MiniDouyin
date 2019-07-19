@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorback_3"
+    >
+
+    <com.example.minidouying.CircleImageView
+        android:id="@+id/top_image"
+        android:layout_width="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_icon"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:id="@+id/top_edittext"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/top_search"
+        android:layout_toRightOf="@+id/top_image"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="0dp"
+        android:textSize="11dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorword"
+        android:background="@drawable/shape_noangle"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/top_search"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:background="@drawable/shape_noangle"
+        android:text="search"
+        android:layout_marginRight="10dp"
+        android:textSize="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorword"
+        android:layout_height="30dp" />
+
+
+</RelativeLayout>
+

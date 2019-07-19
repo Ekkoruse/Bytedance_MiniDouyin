@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorback_2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorback_1"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <com.example.minidouying.CircleImageView
+            android:id="@+id/sculpture"
+            android:layout_width="113dp"
+            android:layout_height="158dp"
+            android:layout_weight="1"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_icon" />
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="张庆春"
+                android:textSize="24sp"
+                android:textColor="@color/colorpink"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="ekkoruse"
+                android:textColor="@color/colorword"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorback_1"
+    >
+
+
+ <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.example.minidouying.RoundImageView
+        android:id="@+id/res_image_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape_nomargin"
+        android:layout_alignRight="@+id/strut"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/error"
+        />
+
+    <com.example.minidouying.RoundImageView
+        android:id="@+id/res_image_2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_nomargin"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/strut"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/error"
+        />
+
+   <View
+       android:id="@+id/strut_2"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:layout_centerHorizontal="true"/>
+
+   <TextView
+       android:id="@+id/tv_data"
+       android:layout_width="match_parent"
+       android:layout_height="25dp"
+       android:layout_marginBottom="35dp"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="8dp"
+       android:layout_marginLeft="35dp"
+       android:text="qqqqqqqq"
+       android:textColor="@color/colorword"
+       android:layout_alignRight="@+id/strut_2"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"/>
+
+   <TextView
+       android:id="@+id/tv_data_2"
+       android:layout_width="match_parent"
+       android:layout_marginRight="25dp"
+       android:layout_marginLeft="28dp"
+       android:layout_centerVertical="true"
+       android:layout_height="25dp"
+       android:layout_marginBottom="35dp"
+       android:text="bbbbbbbbbbb"
+       android:layout_alignParentBottom="true"
+       android:textColor="@color/colorword"
+       android:layout_alignLeft="@+id/strut_2"
+       android:layout_alignParentRight="true"
+       />
+    <TextView
+        android:id="@+id/tv_data_3"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="35dp"
+        android:text="qqqqqqqq"
+        android:textColor="@color/colorword"
+        android:layout_alignRight="@+id/strut_2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_data_4"
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="28dp"
+        android:layout_centerVertical="true"
+        android:layout_height="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="bbbbbbbbbbb"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorword"
+        android:layout_alignLeft="@+id/strut_2"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+
+

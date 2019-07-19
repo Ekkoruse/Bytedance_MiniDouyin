@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#00000000"
+
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c99f9e9e">
+
+        <Button
+            android:id="@+id/btn_play"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="暂停" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="00:00/00:00"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/btn_hear"
+            android:layout_toRightOf="@+id/tv_time" />
+
+        <Button
+            android:id="@+id/btn_hear"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:layout_toStartOf="@+id/btn_setting"
+            android:layout_toLeftOf="@+id/btn_stop"
+            android:text="音量" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/btn_stop"
+            android:text="全屏" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="停止" />
+
+    </RelativeLayout>
+
+    <com.example.minidouying.VerticalSeekBar
+        android:id="@+id/seekhear"
+        android:layout_width="52dp"
+        android:layout_height="325dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>
+
